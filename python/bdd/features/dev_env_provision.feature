@@ -10,9 +10,9 @@ Scenario Outline: Assert correct dev and test dependencies are installed properl
 
 Examples:
 | command               | expected                      |
-| cat /etc/os-release   | Ubuntu 14.04                  |
+| cat /etc/os-release   | Ubuntu 16.04                  |
 | python --version      | Python 2.7                    |
 | nosetests --version   | nosetests version 1.3         |
-| coverage --version    | Coverage.py, version 4.4      |
-| phantomjs --version   | 1.9                           |
+| coverage --version    | Coverage.py, version 4.5      |
+| phantomjs --version   | 2.1                           |
 | behave --version      | behave 1.2                    |
