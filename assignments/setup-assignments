@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir -p ~/.aws
+touch ~/.aws/credentials
+
+cat fixtures/credentials >> ~/.aws/credentials
