@@ -14,6 +14,8 @@ def execute(cmd):
 
 
 class test_awscreds(unittest.TestCase):
+  def setUp(self):
+    execute('./setup-assignments')
 
-	def test_awscreds_returns_access_key_given_profile(self):
+  def test_awscreds_returns_access_key_given_profile(self):
 		self.assertIn('testvalue', execute('./awscreds -field key -profile profile1'))
