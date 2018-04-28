@@ -10,6 +10,10 @@ from selenium.webdriver.support import expected_conditions as EC # available sin
 
 driver = webdriver.PhantomJS()
 
+@given(u'CLI jokes tool is installed')
+def step_impl(context):
+    execute('./joke_installer_bash')
+
 @given(u'a Ubuntu development machine')
 def step_impl(context):
     pass
