@@ -9,7 +9,7 @@ class TestSeleniumUsingPhantomJS(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.PhantomJS()
 
-    def test_page_title_exists(self):
+    def _test_page_title_exists(self):
         self.driver.get('http://ieeexplore.ieee.org/')
 
         assert "IEEE Xplore Digital Library" in self.driver.title
