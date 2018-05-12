@@ -9,7 +9,7 @@ class test_syntax_validator(unittest.TestCase):
         self.assertFalse(syntax_validator.is_valid_username('abcdefg'))
 
     def test_is_valid_us_zip_code_returns_true_given_valid_input(self):
-        self.assertTrue(syntax_validator.is_valid_us_zip_code('555555555'))
+        self.assertTrue(syntax_validator.is_valid_us_zip_code('55555-5555'))
 
     def test_is_valid_us_zip_code_returns_false_given_invalid_input(self):
         self.assertFalse(syntax_validator.is_valid_us_zip_code('5555'))
