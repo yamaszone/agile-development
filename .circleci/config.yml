@@ -37,4 +37,5 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            ./run all
+            ./run pyunit
+            ./run bdd
