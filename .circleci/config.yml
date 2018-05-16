@@ -38,7 +38,7 @@ jobs:
           command: |
             . venv/bin/activate
             ./run pyunit
-            cd ~/repo/python/bdd/feature
+            cd ~/repo/python/bdd/features
             behave jokes.feature
             # The following commented out as phantomjs throws deprecation exception
             #./run selenium
