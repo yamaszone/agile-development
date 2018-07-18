@@ -10,6 +10,18 @@ class test_utils(unittest.TestCase):
 		self.assertEqual(2, utils.divide(4,2))
 
 class Test_Calculator(unittest.TestCase):
-    
+    def setUp(self):
+        self.sut = utils.Calculator()
+
     def test_add(self):
-        self.assertEqual(5, utils.Calculator().add(2, 3))
+        self.assertEqual(5, self.sut.add(2, 3))
+
+    def test_multiply(self):
+        self.assertEqual(6, self.sut.multiply(2, 3))
+
+    def test_divide(self):
+        self.assertEqual(2, self.sut.divide(6, 3))
+        self.assertEqual(None, self.sut.divide(6, 0))
+
+    def tearDown(self):
+        self.sut = None
