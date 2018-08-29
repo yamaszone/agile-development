@@ -4,7 +4,7 @@ from tdd.src import utils
 class test_utils(unittest.TestCase):
 
 	def test_add(self):
-		self.assertEqual(6, utils.add(2,3))
+		self.assertEqual(5, utils.add(2,3))
 
 	def test_divide(self):
 		self.assertEqual(2, utils.divide(4,2))

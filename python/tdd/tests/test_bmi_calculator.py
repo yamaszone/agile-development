@@ -11,7 +11,6 @@ class test_bmi_calculator(unittest.TestCase):
 
   @unpack
   @data(
-    {'age_group': 'Underweight', 'height': 72, 'weight': 165},
     {'age_group': 'Normal', 'height': 72, 'weight': 165}
   )
   def test_calculate_returns_weight_group_v2(self, age_group, weight, height):
